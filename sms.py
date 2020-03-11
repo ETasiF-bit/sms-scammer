@@ -22,5 +22,5 @@ resp = requests.post('https://textbelt.com/text',{
 print(resp.json())
 if '"success" : true ' in resp.text :
 	print("\033[92m Msg sent \033[0m")
-if '"success" : false ' in resp.text :
-	print("\033[91m Failed to send sms! ")
+if '"success" : true ' in resp.text :
+	print("\033[92m msg send \033 [0m]")
